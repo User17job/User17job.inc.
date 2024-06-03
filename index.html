@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./img/logo.png">
 </head>
 <body>
-  <div class="btn-nav">
+  <div class="btn-nav" name="forButton" id="1">
     <label class="burger" for="burger">
       <input type="checkbox" id="burger">
       <span></span>
@@ -21,14 +21,16 @@
 <div class="container-fluid">
     <!-- nav -->
     <div class="row p-0">
-        <div class="col navbar moveUp p-1 ">
-          <nav>
-            <ul class="menu">
+        <div class="col navbar  p-1 ">
+          <nav class="nav " id="nav">
+            <ul class="menu ">
               <li><a href="#!">User17job</a></li>
               <li><a href="#About">About</a></li>
               <li><a href="#Members">Us</a></li>
               <li><a href="#projects">Project</a></li>
               <li><a href="#footer">Contact</a></li>
+              <li id="img"><img src="./img/logo.png" alt="Logo"></li>
+
             </ul>
           </nav>  
         </div>
@@ -570,7 +572,7 @@
         </div>
         <div class="modal-body">
           <figure>
-            <img src="/public/img/fotoDeRamphys.jpeg" alt="">
+            <img src="./img/fotoDeRamphys.jpeg" alt="">
             <figcaption>Owner</figcaption>
             <h2>Data</h2>
             <li>from: Dominican Republic</li>

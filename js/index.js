@@ -1,25 +1,22 @@
 const btn = document.querySelector('.btn-nav');
-const menu = document.querySelector('.navbar');
+const menu = document.querySelector('#nav');
 const toUp = document.querySelector('#btnUp');
-let chc=1
 window.sr = ScrollReveal();
 
 //  SHOW AND HIDDEN MENU ON MOBILE
-btn.addEventListener("click", cambio)
-function cambio() {
-    if (menu.classList.contains('moveDown')) {
-        menu.classList.remove('moveDown');
-        console.log(2)
-    } else {
-        // Si no tiene la clase, la agregamos
-        menu.classList.add('moveDown');
-        console.log(1)
+btn.addEventListener("click", change)
+
+function change() {
+ let id = document.getElementsByName("forButton")[0].id
+    if(id ==1){
+        menu.classList.add("active")
+        id = document.getElementsByName("forButton")[0].id=0;
+    }else{
+        menu.classList.remove("active")
+        id = document.getElementsByName("forButton")[0].id=1;
     }
-};
+ };
 
-
-
-// using scroll reveall
 sr.reveal("#dosLeft",{
 duration:2500,
 origin:"left",
