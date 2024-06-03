@@ -723,7 +723,7 @@ nav{
           width: 120%;
           min-width: 500px;
           height: 200%;
-          top: 150px;
+          top: -150px;
       }
       }
     }
@@ -1164,12 +1164,15 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-        img{
-            transform: scale(2);
-            left: -10rem;
+    .divo{
+      .background1{
+        #cool{
+          top: 50px;
         }
-        
+      }
     }
+        
+  }
 
 }
 @media screen and (max-width: 700px) {
