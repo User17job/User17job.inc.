@@ -1,5 +1,15 @@
 const menu = document.querySelector('#nav');
 const toUp = document.querySelector('#btnUp');
+const wrapper = document.querySelector(".wrapper")
+const Loader = document.querySelector(".Load")
+Loader.style.display='block'
+wrapper.style.display='none'
+
+setTimeout(() => {
+    Loader.style.display='none'
+    wrapper.style.display='block'
+    
+
 // using scrollReaveal
 window.sr = ScrollReveal();
 sr.reveal("#dosLeft",{
@@ -56,3 +66,8 @@ function mover(){
     checkbox.checked = false;
     navItems.style.top = '-110vh';
 }
+
+
+}, 4675);
+
+// END OF THE SCRIPT

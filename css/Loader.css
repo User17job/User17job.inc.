@@ -1,0 +1,82 @@
+.Load{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+.loaderr {
+    width: 12em;
+    height: 1em;
+    border-radius: 8px;
+    background-color: #8147ff44;
+    position: relative;
+    margin: auto;
+    top: 50%;
+  }
+  .loaderr div {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom, rgb(91, 91, 254) 10%, rgb(124, 43, 124) 100%);
+    animation: width7435 5s linear infinite;
+    transition: all;
+  }
+  @keyframes width7435 {
+    from {
+      /*width: 0;*/
+      transform: scaleX(0);
+    }
+  
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+
+  .loader2 {
+    position: relative;
+    top: 20%;
+  }
+  
+  .loader2 span {
+    left: 50%;
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+  
+  .loader2 span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.3px rgb(91, 91, 254);
+  }
+  
+  .loader2 span:nth-child(2) {
+    color: rgb(91, 91, 254);
+    -webkit-text-stroke: 1px rgb(91, 91, 254);
+    animation: uiverse723 3s ease-in-out infinite;
+  }
+  
+  @keyframes uiverse723 {
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+       54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+       51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .loader2 span {
+      
+        font-size: 45px;
+        letter-spacing: 5px;
+      }
+  }

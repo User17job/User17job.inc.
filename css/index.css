@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Caveat:wght@400..700&family=Irish+Grover&family=Madimi+One&family=Oswald:wght@200..700&family=Peralta&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&family=Rubik+Scribble&family=Tac+One&display=swap');
+@import url('Loader.css');
 @import url('navBtn.css');
 @import url('footer.css');
 
@@ -14,7 +15,15 @@ body{
     height: auto;
     color: aliceblue;
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
+
+h3, h4{
+  font-family: "Oswald", sans-serif;
+  font-weight: 550;
+}
+
 body::-webkit-scrollbar{
   background-color: #000c13;
 }
@@ -35,7 +44,9 @@ body::-webkit-scrollbar-thumb{
   height: 5430px;
   position: relative;
 }
-
+.wrapper{
+  display: none;
+}
 a{
     font-size: 20px;
     color: aliceblue;
@@ -48,7 +59,7 @@ a{
   position: absolute;
   z-index: 35;
   font-family: "Share Tech Mono", monospace;
-  transition: 1.5s;
+  transition: 1s;
 }
 nav{
   width: 100%;
@@ -82,9 +93,7 @@ nav{
     transform: scale(1.3);
   }
 }
-.hide{
-  background-color: #0045db;
-}
+
 
 .menu li {
   width: 125px;
@@ -172,18 +181,20 @@ nav{
         .background{
             width: 50%;
             height: 50%;
-            border: solid 3px rgb(70, 129, 255);
+            border: solid 3px rgba(56, 114, 239, 0.815);
             border-bottom: rgb(30, 36, 49) 3px solid;
             position: absolute;
             transition: 1s;
             h1{
+              font-family: "Nunito Sans", sans-serif;
+              font-family: 750;
               color: #d4e2ff;
               text-shadow: 1.5px 0.5px 4px blueviolet;
             }
             h3{
             margin-top: 20%;
             text-shadow: 1px 0px 2px rgb(133, 131, 131);
-
+            color: #120d14;  
             }
         }
 
@@ -192,8 +203,11 @@ nav{
             height: 50%;
             position: absolute;
             border: solid 3px rgb(30, 36, 49);
-            border-top:rgb(70, 129, 255) 3px solid;
+            border-top:rgba(56, 114, 239, 0.815) 3px solid;
             left:49.8%;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: end;
             top: 50%;
             transition: 1s;
         }
@@ -642,7 +656,7 @@ nav{
     width: 180px;
     height: 200px;
     background: linear-gradient(#fff2, transparent);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
@@ -707,7 +721,6 @@ nav{
     .paraELBackground{
         z-index: 10;
         width: 90%;
-        border: solid;
         max-width: 100%;
         height: 90vh;
         margin: auto;
@@ -1138,25 +1151,51 @@ nav{
           .background{
             h3{
               height: 3px;
-              margin-top: 15%;
+              margin-top: 37%;
               }
           }
+          .text{
+            font-size: 15px;
+            padding: 10px;
+
+
+          }
         }
+       
     }
     .boxes{
       display: none;
     }
 
     .dos{
-
-        #cool2{
-            position: absolute;
-            top: 10%;
+      .paraELBackground{
+        font-size: 15px;
+        position: relative;
+        .content{
+          padding-top: 20%;
+          position: absolute;
+          width: 98%;
+          height: 98%;
+          border: solid rgba(255, 0, 0, 0);
+          text-align: center;
+          overflow: scroll;
+          text-overflow: ellipsis;
         }
-        #cool3{
-            position: absolute;
-            top: 75%;
+      }
+      .paraElTexto{
+        font-size: 15px;
+        position: relative;
+        .content{
+          padding-top: 20%;
+          position: absolute;
+          width: 98%;
+          height: 98%;
+          border: solid rgba(0, 255, 42, 0);
+          text-align: center;
+          overflow: scroll;
+          text-overflow: ellipsis;
         }
+      }
     }
     .cuatro{
         height: 950px;
@@ -1169,9 +1208,8 @@ nav{
         z-index: 10;
       }
     .container .glass{
-            margin: 20px 20px;
-            z-index: 10;
-        
+      margin: 20px 20px;
+      z-index: 10;
     }
 
     /* cinco */
@@ -1189,6 +1227,31 @@ nav{
         }
       }
     }
+    .text{
+      width: 95%;
+      text-align: center;
+      overflow: scroll;
+      text-overflow: ellipsis;
+    }
+  }
+    .seis{
+      top: 950px;
+      padding: 0px 10px;
+      height: auto;  
+      .div{
+          min-height: 400px;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+           div{
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+          } 
+
+      }
+      
         
   }
 
@@ -1196,5 +1259,16 @@ nav{
 @media screen and (max-width: 700px) {
   .modalButton{
     display: none;
+  }
+  .textoo{
+    display:none
+  }
+  .siete{
+    .minD{
+      border: solid rgba(75, 64, 177, 0.539);
+      border-top: solid transparent;
+      border-left: solid transparent;
+      border-right: solid transparent;
+    }
   }
 }
