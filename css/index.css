@@ -48,17 +48,12 @@ a{
   position: absolute;
   z-index: 35;
   font-family: "Share Tech Mono", monospace;
+  transition: 1.5s;
 }
 nav{
   width: 100%;
   position: relative;
   background-color: #32323200;
-}
-.active{
-  top: -100vh;
-}
-.normal{
-  top: 0px;
 }
 
 .menu {
@@ -1089,7 +1084,7 @@ nav{
     .navbar{
       background-color: rgba(0, 0, 0, 0.384);
       border-radius: 3px;
-     
+      top: -110vh;
     }
     .menu {
       background-color: #323232a1;
@@ -1101,8 +1096,6 @@ nav{
       height: 100vh;
       list-style: none;
       align-items: center;
-
-
     }
     .menu li:hover a {
       color: #ffffff;

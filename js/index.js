@@ -1,22 +1,7 @@
-const btn = document.querySelector('.btn-nav');
 const menu = document.querySelector('#nav');
 const toUp = document.querySelector('#btnUp');
+// using scrollReaveal
 window.sr = ScrollReveal();
-
-//  SHOW AND HIDDEN MENU ON MOBILE
-btn.addEventListener("click", change)
-
-function change() {
- let id = document.getElementsByName("forButton")[0].id
-    if(id ==1){
-        menu.classList.add("active")
-        id = document.getElementsByName("forButton")[0].id=0;
-    }else{
-        menu.classList.remove("active")
-        id = document.getElementsByName("forButton")[0].id=1;
-    }
- };
-
 sr.reveal("#dosLeft",{
 duration:2500,
 origin:"left",
@@ -48,9 +33,26 @@ sr.reveal("#projectU",{
     distance:"300px"
 })
 
-
-
 // BACK TO UP
 toUp.addEventListener("click", () => {
     window.scrollTo({ top: -500, behavior: "smooth" });
 })
+// nav burguer button in action
+const checkbox = document.getElementById('burger');
+const navItems = document.querySelector('.navbar');
+checkbox.addEventListener('change', function() {
+    if (this.checked) {
+        navItems.style.top = '0vh';
+    } else {
+        navItems.style.top = '-110vh';
+    }
+});
+const salto = document.getElementsByClassName('salto');
+for (let i = 0; i < salto.length; i++) {
+    const element = salto[i];
+    element.addEventListener("click", mover);
+}
+function mover(){
+    checkbox.checked = false;
+    navItems.style.top = '-110vh';
+}
