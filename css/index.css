@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Spice&family=Caveat:wght@400..700&family=Irish+Grover&family=Madimi+One&family=Oswald:wght@200..700&family=Peralta&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&family=Rubik+Scribble&family=Tac+One&display=swap');
 @import url('Loader.css');
 @import url('navBtn.css');
+@import url('modals.css');
 @import url('footer.css');
 
 html {
@@ -193,7 +194,9 @@ nav{
               text-shadow: 1.5px 0.5px 4px blueviolet;
             }
             h3{
-            margin-top: 20%;
+            position: relative;
+            top: 50%;
+            left: 55%;
             text-shadow: 1px 0px 2px rgb(133, 131, 131);
             color: #120d14;  
             }
@@ -205,15 +208,20 @@ nav{
             position: absolute;
             border: solid 3px rgb(30, 36, 49);
             border-top:rgba(56, 114, 239, 0.815) 3px solid;
-            background-color: #74727232;
+            background-color: #74727200;
             left:49.8%;
             color: #bfb4f8;
             font-weight: 400;
             font-size: 20px;
             text-align: end;
             top: 50%;
-            transition: 1s;
+            transition: 1s;   
         }
+        .text:hover{
+          background-color: #1313134e;
+
+        }
+        
     }
 }
 .boxes {
@@ -1177,7 +1185,7 @@ nav{
           .background{
             h3{
               height: 3px;
-              margin-top: 37%;
+              margin-top: 00%;
               }
           }
           .text{
@@ -1201,7 +1209,6 @@ nav{
           height: 98%;
           border: solid rgba(255, 0, 0, 0);
           text-align: center;
-          overflow: scroll;
           text-overflow: ellipsis;
         }
       }
@@ -1215,7 +1222,6 @@ nav{
           height: 98%;
           border: solid rgba(0, 255, 42, 0);
           text-align: center;
-          overflow: scroll;
           text-overflow: ellipsis;
         }
       }

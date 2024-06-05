@@ -2,8 +2,29 @@ const menu = document.querySelector('#nav');
 const toUp = document.querySelector('#btnUp');
 const wrapper = document.querySelector(".wrapper")
 const Loader = document.querySelector(".Load")
+const project1 = document.querySelector("#projectYh3")
+const project2 = document.querySelector("#projectUh3")
 Loader.style.display='block'
 wrapper.style.display='none'
+
+project1.addEventListener('dblclick', ()=>{
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "this project is still in process",
+        footer: '<a href="#">please wait</a>'
+    });
+      
+})
+project2.addEventListener('dblclick', ()=>{
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "this project is still in process",
+        footer: '<a href="#">please wait</a>'
+    });
+      
+})
 
 setTimeout(() => {
     Loader.style.display='none'
@@ -60,14 +81,16 @@ checkbox.addEventListener('change', function() {
 const salto = document.getElementsByClassName('salto');
 for (let i = 0; i < salto.length; i++) {
     const element = salto[i];
+
     element.addEventListener("click", mover);
 }
 function mover(){
-    checkbox.checked = false;
-    navItems.style.top = '-110vh';
+    let anchoViewport = window.innerWidth;
+    if(anchoViewport < 905){
+        checkbox.checked = false;
+        navItems.style.top = '-110vh';
+    }
 }
-
-
 }, 4675);
 
 // END OF THE SCRIPT
