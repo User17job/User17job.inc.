@@ -3,20 +3,10 @@ const toUp = document.querySelector('#btnUp');
 const wrapper = document.querySelector(".wrapper")
 const Loader = document.querySelector(".Load")
 const project1 = document.querySelector("#projectYh3")
-const project2 = document.querySelector("#projectUh3")
 Loader.style.display='block'
 wrapper.style.display='none'
 
-project1.addEventListener('dblclick', ()=>{
-    Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "this project is still in process",
-        footer: '<a href="#">please wait</a>'
-    });
-      
-})
-project2.addEventListener('dblclick', ()=>{
+project1.addEventListener('click', ()=>{
     Swal.fire({
         icon: "error",
         title: "Oops...",
